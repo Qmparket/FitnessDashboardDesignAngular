@@ -1,0 +1,99 @@
+@import "../../../assets/_variables";
+$rowPadding: 20px;
+.container {
+  padding: $itemContainerPadding;
+  overflow-y: hidden;
+  .container__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container__bottom {
+    display: relative;
+    margin-top: 5%;
+    .left-border {
+      width: 2px;
+      height: 500px;
+      background-color: $orange;
+      position: absolute;
+      transform: translateX(-50%);
+      margin-top: calc(1.3em / 2);
+    }
+    .row {
+      position: relative;
+      padding: 0 $rowPadding;
+      .title-container {
+        margin-bottom: 20px;
+        position: relative;
+        .circle {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $orange;
+        top: 50%;
+        left: -$rowPadding;
+        transform: translate(-50%, -50%);
+      }
+      .category-title {
+        font-size: 1.3em;
+        color: $orange;
+
+      }
+      }
+
+      &.row--first {
+        .row--first__inner-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          margin-bottom: 30px;
+          .bike-img-container {
+
+            width: 260px;
+            position: relative;
+            box-sizing: border-box;
+            z-index: 1;
+            img {
+              width: 260px;
+              padding: 0;
+              margin: 0;
+            }
+            .dark-overlay {
+              position: absolute;
+              width: 100%;
+              top: 0;
+              left: 0;
+              height: 100%;
+              background-color: black;
+              opacity: 0.3;
+            }
+            .over-img-text {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 2em;
+              z-index: 5;
+            }
+          }
+          .info-container {
+            .complete-percentage {
+              margin-top: 5%;
+              font-size: 1.3em;
+              color: $orange;
+            }
+          }
+        }
+      }
+
+      &.row--second {
+        .row--second__inner-container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-column-gap: 10px;
+          grid-row-gap: 20px;
+        }
+      }
+
+    }
+  }
+}

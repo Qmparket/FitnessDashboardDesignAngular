@@ -1,0 +1,34 @@
+<nav>
+  <div class="left-container">
+    <div class="menu">
+      <div class="menu__dash"></div>
+      <div class="menu__dash menu__dash--short"></div>
+      <div class="menu__dash"></div>
+      <div class="menu__dash menu__dash--short"></div>
+    </div>
+    <div class="company-name">CONCEPT</div>
+  </div>
+  <ul class="tabs">
+    <li class="tabs__item"
+        *ngFor="let tabItem of tabItems"
+        (click)="onNavTabClicked(tabItem)"
+        [ngClass]="{'tabs__item--selected': tabItem.isSelected }">
+      {{tabItem.title}}
+    </li>
+  </ul>
+  <div class="user">
+    <div class="user__img-container">
+      <img src="../../assets/images/Avatar.png">
+      <div class="user__img-container__notifications">7</div>
+    </div>
+    <div class="user__information">
+      <div class="user__information__name">Sime Burgaski</div>
+      <div class="user__information__subtitle">
+        <div class="user__information__subtitle__job">Senior Developer</div>
+        <span></span>
+        <div class="user__information__subtitle__location">Burgas, VRN.</div>
+      </div>
+    </div>
+  </div>
+
+</nav>

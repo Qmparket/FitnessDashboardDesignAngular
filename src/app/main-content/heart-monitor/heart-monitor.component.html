@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="container__text">
+  <app-title [title]="'heart rate'"></app-title>
+  <div class="readings">
+    <div class="readings__item readings__item--resting">
+      <img src="../../../assets/images/downwards-arrow.png" alt="">
+      <div class="readings__item__text-container">
+        <div class="readings__item__text-container__heart-rate">54 BPM</div>
+        <div class="readings__item__text-container__type">Resting</div>
+      </div>
+    </div>
+    <span class="readings__separator"></span>
+    <div class="readings__item readings__item--resting-average">
+      <img src="../../../assets/images/upwards-arrow.png" alt="">
+      <div class="readings__item__text-container">
+        <div class="readings__item__text-container__heart-rate">55 BPM</div>
+        <div class="readings__item__text-container__type">Avg. Resting</div>
+      </div>
+    </div>
+    <span class="readings__separator"></span>
+    <div class="readings__item readings__item--max">
+      <img src="../../../assets/images/upwards-arrow.png" alt="">
+      <div class="readings__item__text-container">
+        <div class="readings__item__text-container__heart-rate">126 BPM</div>
+        <div class="readings__item__text-container__type">MAX</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container__chart">
+    <div class="container__chart__marker">
+      <div class="container__chart__marker__circle"></div>
+      <div class="container__chart__marker__shaft"></div>
+    </div>
+  </div>
+</div>
+
+

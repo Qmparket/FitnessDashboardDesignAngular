@@ -1,0 +1,25 @@
+@import '../../../assets/_variables';
+.container {
+  margin: $itemContainerPadding;
+  background-image: url("../../../assets/images/steps.png");
+	background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 90%;
+  position: relative;
+  .container__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .container__text__number {
+      color: $orange;
+      font-size: 4em;
+      font-weight: 500;
+    }
+    .container__text__steps {
+      text-align: right;
+      font-size: 1.5em;
+    }
+  }
+}

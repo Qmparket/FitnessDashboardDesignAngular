@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="container__top">
+    <app-title [title]="'Courses'"></app-title>
+    <div class="courses-number">12</div>
+  </div>
+  <div class="container__table">
+    <table>
+      <th>Name</th>
+      <th>Location</th>
+      <th>Type</th>
+      <tr *ngFor="let course of courses">
+        <td>
+          <div class="course-thumbnail">{{course.initials}}</div>
+          <div class="course-name">{{course.name}}</div>
+        </td>
+        <td>
+          <div class="course-location">{{course.location}}</div>
+        </td>
+        <td>
+          <div class="circle" [class]="'circle ' + course.circleColor"></div>
+          <div class="course-type">{{course.type}}</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

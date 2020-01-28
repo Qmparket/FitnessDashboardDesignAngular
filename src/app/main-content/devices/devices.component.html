@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="container__top">
+    <app-title [title]="'devices'"></app-title>
+    <app-button-orange-outline [buttonText]="'Add'"></app-button-orange-outline>
+  </div>
+  <div class="container__devices">
+    <app-device [imageName]="'fenix-3.png'" [name]="'Fenix 3 Hr'" [timeStamp]="'Last synced: Today, 8:43 AM'"
+      [isRetired]="false"></app-device>
+    <div class="devider margin"></div>
+    <app-device [imageName]="'varia-ut800.png'" [name]="'Varia UT800'" [timeStamp]="'Last synced: August 10, 2016'"
+      [isRetired]="true"></app-device>
+    <app-device [imageName]="'edge-explore.png'" [name]="'Edge 1000'" [timeStamp]="'Last synced: July 9, 2016'"
+      [isRetired]="true"></app-device>
+  </div>
+
+</div>

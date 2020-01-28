@@ -1,0 +1,13 @@
+@import '../../../assets/_variables';
+.container {
+	background: $orange;
+	padding: 20px 30px;
+	color: $text-gray;
+	.greeting {
+		font-size: 2em;
+
+		span {
+			font-weight: 700;
+		}
+	}
+}

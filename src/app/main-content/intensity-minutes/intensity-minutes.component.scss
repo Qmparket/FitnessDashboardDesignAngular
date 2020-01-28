@@ -1,0 +1,33 @@
+@import "../../../assets/_variables";
+.container {
+  padding: $itemContainerPadding;
+  .container__inner {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    .calendar {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      margin-top: 5%;
+      .calendar__item--small {
+        height: 90%;
+        align-self: center;
+      }
+    }
+    .watch {
+      margin-top: 15%;
+      display: flex;
+      justify-content: center;
+    }
+    .minutes {
+      color: $orange;
+      font-size: 8em;
+      text-align: center;
+    }
+    .daily-goal {
+      text-align: center;
+      font-size: 1.2em;
+    }
+  }
+	}

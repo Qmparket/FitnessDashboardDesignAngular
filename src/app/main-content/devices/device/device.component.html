@@ -1,0 +1,12 @@
+<div class="container">
+  <img [src]="assetsFolderPath + imageName" alt="">
+  <div class="container__text">
+    <div class="device-name">{{name}}</div>
+    <div class="timestamp">{{timeStamp}}</div>
+  </div>
+  <div class="retired" *ngIf="isRetired">
+    <div class="circle"></div>
+    Retired
+  </div>
+
+</div>

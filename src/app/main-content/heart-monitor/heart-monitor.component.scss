@@ -1,0 +1,62 @@
+@import "../../../assets/_variables";
+.container {
+	background-image: url("../../../assets/images/Chart.png");
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	.container__text {
+		padding: $itemContainerPadding;
+
+		.readings {
+			margin: 15px 0;
+			display: flex;
+			justify-content: space-between;
+			height: 60px;
+			.readings__separator {
+				width: 2px;
+				height: 100%;
+				background-color: $light-gray-border;
+			}
+
+			.readings__item {
+				display: flex;
+				align-items: center;
+				img {
+					margin-right: 5px;
+					height: 20px;
+				}
+				.readings__item__text-container__heart-rate {
+					font-size: 1.1em;
+				}
+				.readings__item__text-container__type {
+					font-size: 0.8em;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+	.container__chart {
+		.container__chart__marker {
+			position: absolute;
+			top: 45%;
+			left: 20%;
+			.container__chart__marker__circle,
+			.container__chart__marker__shaft {
+				background-color: $orange;
+			}
+			.container__chart__marker__circle {
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+			}
+
+			.container__chart__marker__shaft {
+				height: 250px;
+				width: 2px;
+				margin: 0 auto;
+			}
+		}
+	}
+}

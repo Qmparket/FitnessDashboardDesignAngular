@@ -1,0 +1,35 @@
+@import '../../../../assets/_variables';
+.container {
+  display: flex;
+  cursor: pointer;
+  img {
+    width: 15%;
+  }
+  .container__text {
+    widows: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &:hover {
+      color: $orange;
+    }
+    .device-name {
+      font-size: 1.3em;
+    }
+    .timestamp {
+      font-size: .8em;
+    }
+  }
+  .retired {
+    color: $orange;
+    align-self: center;
+    margin-left: auto;
+    .circle {
+      background: $orange;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+}

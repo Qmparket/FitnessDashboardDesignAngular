@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="container__top">
+    <app-title [title]="'challenges'"></app-title>
+    <app-button-orange-outline [buttonText]="'New'"></app-button-orange-outline>
+  </div>
+  <div class="container__bottom">
+    <div class="left-border"></div>
+    <div class="row row--first">
+      <div class="title-container">
+        <div class="circle"></div>
+        <div class="category-title">Current</div>
+      </div>
+      <div class="row--first__inner-container">
+        <div class="bike-img-container">
+          <img src="../../../assets/images/bikeimg.png" alt="">
+          <div class="dark-overlay"></div>
+          <div class="over-img-text">75K Bike</div>
+        </div>
+        <div class="info-container">
+          <div class="complete-percentage">93% of 75K Complete</div>
+          <div class="time-remaining">05:20:00 Remaining</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row row--second">
+      <div class="title-container">
+        <div class="circle"></div>
+        <div class="category-title">Past</div>
+      </div>
+      <div class="row--second__inner-container">
+        <app-img-with-text *ngFor="let item of imagesArray" [text]='item.text' [imgName]='item.imgName'>
+        </app-img-with-text>
+      </div>
+    </div>
+  </div>
+</div>

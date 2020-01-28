@@ -1,0 +1,87 @@
+@import "../../../assets/_variables";
+.container {
+  position: relative;
+  padding: $itemContainerPadding;
+  box-sizing: border-box;
+  height: 100%;
+  .container__top {
+    display: flex;
+    app-title {
+      display: inline-block;
+    }
+    .courses-number {
+      display: inline-block;
+      background: $orange;
+      color: $background-gray;
+      padding: 2px 10px;
+      border-radius: 40%;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+  }
+  .container__table {
+      width: 100%;
+      margin-top: 5%;
+      table {
+        width: 100%;
+        border-spacing: 0;
+        th {
+          &:first-child {
+            width: 45%;
+          }
+          &:last-child {
+            width: 20%;
+          }
+          color: $orange;
+          font-size: 1.5em;
+          border-bottom: 1px solid $orange;
+          text-align: left;
+        }
+        tr {
+          cursor: pointer;
+        }
+        td {
+          padding: 20px 0;
+          border-bottom: 1px solid $background-gray;
+          .course-thumbnail {
+            background: $light-gray-border;
+            color: $orange;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 1.1em;
+            font-weight: bold;
+            display: inline-block;
+          }
+          .course-name, .course-location, .course-type, .circle {
+            font-size: 1.2em;
+            display: inline-block;
+          }
+          .course-name {
+            margin-left: 10px;
+
+          }
+          .circle {
+            width: 15px;
+            height: 15px;
+            background: $orange;
+            border-radius: 50%;
+            margin-right: 5px;
+            &.pink {
+              background: $pink;
+            }
+            &.orange {
+              background: $orange;
+            }
+            &.cyan {
+              background: $light-blue;
+            }
+            &.blue {
+              background: $blue;
+            }
+          }
+        }
+      }
+    }
+}
